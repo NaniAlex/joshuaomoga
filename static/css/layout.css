@@ -1,0 +1,140 @@
+/* ------------------------------------
+   Body
+*/
+body {
+  font-family: 'Arial', monospace;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* ------------------------------------
+   Navigation
+*/
+/* Do this if you want to change the color of the navbar */
+.navbar .bg-dark {
+  background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar a:hover{
+  background-color: blue;
+}
+
+
+/* This will insert a space of height 75px before every id:
+   https://github.com/twbs/bootstrap/issues/1768 check the solution from @mnot
+*/
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+
+
+/* ------------------------------------
+   Jumbotron
+*/
+.jumbotron.jumbotron-fluid {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 0.05rem;
+  color: white;
+}
+
+
+/* ------------------------------------
+   About Me
+*/
+.about-me .container .col-md-4 {
+  background-size: cover;
+  background-image: url("../images/about_pic.jpeg");
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.col-md-8 {
+  padding-left: 100px;
+}
+
+.about-text-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* ------------------------------------
+   section
+*/
+.section {
+  margin-top: 100px;
+}
+
+.row.extra {
+  margin-top: 100px;
+}
+
+.pics img {
+  display: block;
+  height: 150px;
+  margin: auto;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*--------------------------------
+   hr (boder line) formats
+*/
+hr.type_1 {
+border: 0;
+height: 55px;
+background-image: url(../images/hr_type_1.png);
+background-repeat: no-repeat;
+}
+
+hr.type_2 {
+border: 0;
+align-content: center;
+height: 55px;
+background-image: url(../images/hr_type_2.png);
+background-repeat: no-repeat;
+}
+
+/* ------------------------------------
+   Footer
+*/
+footer {
+  margin-top: 100px;
+  padding-left: 25px;
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer li {
+  display: inline;
+}
